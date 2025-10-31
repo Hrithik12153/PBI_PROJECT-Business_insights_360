@@ -1,138 +1,68 @@
-# Business Insights 360
+# AtliQ Sales Insights – Power BI Dashboard
 
-## Project Overview
+## 📌 Project Overview
+This project replicates the **Codebasics Power BI Sales Insights** case study. It focuses on building an **interactive sales dashboard** for AtliQ Hardware to enable **data-driven decision making** and improve business performance.  
 
-AtliQ Hardware is growing rapidly in the recent years, and they have decided to implement the data analytics using PowerBi in their company for the first time to surpass their competitors in the market and to make data driven decisions. This project is hoped to give answers to the questions of stakeholder in terms all the aspects like finance, sales, marketing and supply chain.
+- **Tech Stack:** Power BI, SQL  
+- **Domain:** Sales & Business Analysis  
 
-[Live Report Link](https://shorturl.at/SGSt8)
+---
 
-## Tech stacks
+## 🏢 Problem Statement
+AtliQ Hardware, a computer hardware and peripherals manufacturer with branches across India, was facing:  
+- Declining and unpredictable sales.  
+- Difficulty tracking regional performance due to scattered Excel reports.  
+- Lack of clarity for the Sales Director to make timely business decisions.  
 
-- SQL
-- PowerBi Desktop
-- Excel
-- DAX language
-- DAX studio (for optimizing the report)
-- Project charter file
+---
 
-## PowerBI techniques Learnt
+## 💡 Solution
+A **Power BI dashboard** was created to provide clear and actionable insights:  
+- Connected and analyzed raw sales data from SQL Server.  
+- Transformed and cleaned data within Power BI.  
+- Unified multiple currencies and created custom DAX measures.  
+- Built interactive visuals for **Revenue, Sales Quantity, Market Performance, and Profit Trends**.  
 
-- What are all the questions should be asked before staring the project
-- Creating calculated columns
-- creating measure using DAX language
-- Data modeling
-- Using Bookmarks to switch between two visuals
-- Page navigation with buttons
-- Using divide function to prevent zero division errors
-- creating date table using m language
-- Dynamic titles based on the applied filters
-- Using KPI indicators
-- Conditional formatting the values in visuals using icons or background color
-- Data validation techniques
-- PowerBi services
-- Publishing reports to PowerBi services
-- Setting up personal gateway to set up the auto refresh of data
-- PowerBi App creation
-- Collaboration, workspace, access permissions in PowerBi services
-- And more 😅
-- 
+The dashboard helps stakeholders **identify top-performing regions, customers, and products** while highlighting areas needing improvement.
 
-## Business related terms
+---
 
-- Gross price
-- Pre-invoice deductions
-- Post-Invoice deductions
-- Net Invoice sale
-- Gross Margin
-- Net sales
-- Net profit
-- COGC - cost of goods sold
-- YTD - Year to Date
-- YTG - Year to Go
-- Direct
-- Retailer
-- Distributors
-- Consumer
+## 🎯 AIMS Grid (Project Goals)
+- **Purpose:** Provide a single source of truth for sales performance.  
+- **Stakeholders:** Sales Director, Regional Managers, Data Team.  
+- **End Result:** Interactive, drill-down Power BI dashboard.  
+- **Success Criteria:** Data-driven decisions leading to improved sales strategies.  
 
-## Company’s back ground
+---
 
-AltiQ hardware is a company which has grown vastly in the recent years, and opened business all over the globe. It is a company which sells, computer and computer accessories through three mediums/channel
+## 🛠 Steps Followed
+1. Performed exploratory analysis in SQL to understand key metrics.  
+2. Connected SQL dataset to Power BI.  
+3. Cleaned and transformed data (ETL).  
+4. Standardized currencies for consistency.  
+5. Created DAX measures for KPIs and visuals.  
+6. Incorporated stakeholder feedback to refine the dashboard.
 
-- Retailers
-- Direct
-- Distributors
+---
 
-Recently the company has faced a unforeseen loss by opening store in America based on the surveys, intuition and some excel analysis and also the company’s competitors has handful of analytics team to perform analysis and make data driven decision. So, the AltiQ hardware has no other option other than building their analytics team for data driven insights and decisions in the future to survive better in the industry. 
+## 📊 Key Insights
+- Revenue trends by region and product.  
+- Top-performing customers and products.  
+- Profitability analysis to identify business gaps.  
+- Currency-adjusted global sales metrics.  
 
-Project kick off session, where you should get clear of for what and why this project and all other questions you have with regards to the project
+---
 
-### Dataset **Understanding.**
+[Live Report Link](https://shorturl.at/SGSt8)  
 
-Understanding what data is available will be more helpful while doing analysis. before jumping on to the analysis get good understanding of what are data available.
+---
 
-Dimension table : It will have the static data like details of customer and products
+## 🚀 Final Outcome
+The Sales Insights Dashboard enabled AtliQ Hardware to:  
+- Move away from static Excel reports.  
+- Quickly identify performance bottlenecks.  
+- Make **data-backed strategic decisions**.
 
-Fact table : It will have the data about the transactions  
+---
 
-- gdb041:
-    - dim_customer
-        - **27** distinct markets (ex India, USA, spain)
-        - **75** distinct customers thorough out the market
-        - **2** types of platforms
-            - Brick & Motors - Physical/offline store
-            - E-commerce - Online Store (Amazon, flipkart)
-        - Three channels
-            - Retailer
-            - Direct
-            - Distributors
-    - dim_market
-        - **27** distinct markets (ex India, USA, spain)
-        - 7 sub-zones
-        - 4 regions
-            - APAC
-            - EU
-            - nan
-            - LATAM
-    - dim_product
-        - Divisions
-            - P & A
-                - Peripherals
-                - Accessories
-            - PC
-                - Notebook
-                - Desktop
-            - N & S
-                - Networking
-                - Storage
-        - There are 14 different categories, Like Internal HDD, keyboard
-        - There are different variants available for the same product
-    - fact_forecast_monthly
-        - This table is used to forecast the customer’s need in advance, which can help in
-            - Higher customer satisfaction
-            - Reduced cost in warehouses for storage purpose
-        - The table is denormalized by data engineering team, as it is a data warehouse which is aimed to be used for analytical work.
-        - All the date of the month will be replaced by the start date of the month
-        - It will have all the column names and in the end it will have the forecast quantity need of the customer
-    - fact_sales_monthly
-        - This table is more or less is same as fact_forecase_monthly table, but the last column has the value of sold quantity instead of forecast value.
-- gdb056
-    - freight_cost
-        - This table has details of travel cost and other cost for each market with fiscal year
-    - gross_price
-        - Has the details of gross prices with product code
-    - manufacturing_cost
-        - Has the details of manufacturing cost with product code with year
-    - Pre_invoice_dedutions
-        - Has the details of pre invoice deductions percentage for each cutomer with year
-    - Post_invoice_deductions
-        - Post invoice deductions and other deductions details
-
-## Importing data into PowerBi
-
-- As the database is MySQL in this project, we need to import the datasets from Mysql database to PowerBi by providing the Database access credential
-
-## Data Model
-
-- Data modeling plays a vital role and is considered as the basement of report. All the visuals will be build upon the data model.
-- Poor data modeling affects the over all performance of the report.
-- In this project, we have followed Snowfall data modeling method.
+### Author: Hrithik Moger
