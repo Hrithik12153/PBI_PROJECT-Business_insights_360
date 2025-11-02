@@ -23,7 +23,7 @@ This project aims to deliver a 360-degree view of business performance by analyz
 
 
 ## Files and Resources
-- **Power BI Dashboard**: [Interactive Dashboard](https://shorturl.at/SGSt8)
+- **Power BI Dashboard**: [Live Interactive Dashboard](https://shorturl.at/SGSt8)
 
 ## Methodology
 The following steps were followed in this project:
