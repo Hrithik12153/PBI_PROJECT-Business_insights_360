@@ -57,7 +57,7 @@ AtliQ’s fiscal year runs from September to August, and the dataset covers actu
 - Disabled load for tables that were used to derive calculations in fact_actual_estimates to optimize performance and reduce the Power BI report size.
 
 ## Files and Resources
-- **Power BI Dashboard**: [Live Interactive Dashboard](https://shorturl.at/pnUMQ)
+- **Power BI Dashboard**: [Live Interactive Dashboard](https://sl1nk.com/35aI1)
 
 ## 🛠️ Tools Used:  
 **Data Cleaning & Transformation:** Power Query  
